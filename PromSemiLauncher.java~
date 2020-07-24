@@ -1,0 +1,15 @@
+/*
+ * PromSemiLauncher
+ * Version 1.0
+ * Theo and Dennis
+ * 02-14-2020
+ * Launches the program
+ */
+
+class PromSemiLauncher {
+    public static void main(String[] args) { 
+       new Prom();
+    }
+}
+//end of PromSemiLauncher
+

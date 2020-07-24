@@ -1,0 +1,40 @@
+import java.util.*;
+
+class CircleY{
+  int x;
+  int y;
+  int r;
+  int colour = 100;
+  int tableNum;
+  
+  ArrayList<Student>studentA;
+  boolean display=false;
+  
+  public CircleY(int x, int y, int r, ArrayList<Student>studentA,int tableNum){
+    this.x=x;
+    this.y=y;
+    this.r=r;
+    this.studentA=studentA;
+    this.tableNum=tableNum;
+  }
+  
+  public int getX(){
+    return x;
+  }
+  
+  public void setColour(int colour){
+    this.colour=colour;
+  }
+  
+  public void setDisplay(){
+    display=!display;
+  }
+  
+  public String printName(){
+    String nameAll="";
+    for (int i=0;i<studentA.size();i++){
+      nameAll=nameAll+(studentA.get(i)).getName()+" ";
+    }
+    return nameAll;
+  }
+}
